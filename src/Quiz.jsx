@@ -1,4 +1,5 @@
 import React from 'react'
+import Question from './Question'
 
 export default function Quiz() {
     const[questions, setQuestions] = React.useState([])
@@ -8,6 +9,13 @@ export default function Quiz() {
         .then((response) => response.json())
         .then((data) => setQuestions(data.results));
     }, [])
+    console.log(questions)
+
+    const questionElements = questions.map(question => {
+        return <Question 
+
+            />
+    })
 
     return (
         <div>
