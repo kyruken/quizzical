@@ -25,14 +25,13 @@ h1 {
   font-size: 3rem;
   font-weight: 600;
 }
-.start-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.App {
   background-image: url("./assets/blobs.png"),url("./assets/blobs2.png");
   background-repeat: no-repeat, no-repeat;
   background-position: right top, left bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 700px;
 }
 

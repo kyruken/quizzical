@@ -1,17 +1,20 @@
 import React from 'react'
 import './App.css'
-
+import Home from './Home'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 function App() {
 
-  return (
-    <div className="start-page">
-      <div className="start-quiz">
-        <h1>Quizzical</h1>
-        <p>Answer these 5 questions!</p>
-        <button>Start quiz</button>
-      </div>
+  //When we click start quiz, render a new page to the screen
+  //Put away start-page
 
-    </div>
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path='/' element={<Home />}/>
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
