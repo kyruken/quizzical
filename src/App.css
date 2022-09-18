@@ -1,6 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Resets */
+button {
+  border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+/* ^ Resets ^ */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./assets/blobs.png"),url("./assets/blobs2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, left bottom;
+  height: 700px;
+}
+
+.start-quiz {
+  color: #293264;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+button {
+  border-radius: 1.5rem;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  width: 15rem;
+  height: 4rem;
 }
